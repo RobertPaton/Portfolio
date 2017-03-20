@@ -130,6 +130,11 @@ body
 	text-align: center;	
 }
 
+.expandLink p
+{
+	display: inline;
+}
+
 
 @media (max-width: 1199px) {
 	#logo

@@ -36,11 +36,12 @@
       <div>
         <p id="work">My Work</p>
       </div>
-      <div class="col-md-3">
-        <a href="http://audiophile.robertpaton.com/" target="blank">
-          <img src="img/audiophile.svg" alt="Audiophile" class="img-responsive web_hover">
+      <div class="col-md-3 icon">
+        <a data-toggle="collapse" href="#audioContent" aria-expanded="false" aria-controls="audioContent">
+          <img src="img/audiophile.svg" alt="Audiophile" id="audio" class="img-responsive web_hover">
         </a>
       </div>
+
       <div class="col-md-3">
         <a href="http://christinatischler.robertpaton.com/" target="blank">
           <img src="img/christinatischler.svg" alt="Christina Tischler" class="img-responsive web_hover">
@@ -56,24 +57,40 @@
           <img src="img/mcore.svg" alt="Mcore" class="img-responsive web_hover">
         </a>
       </div>
+
+      <div class=" col-md-10 col-md-offset-1 collapse" id="audioContent">
+      <ul class="nav navbar-nav">
+        <li>
+          <a href="https://github.com/RobertPaton/audiophile" target="blank" class="expandLink">
+            <img src="img/github.png" alt="Github Link">
+            <p>Repo</p>
+          </a>          
+        </li>
+
+        <li>
+          <a href="http://audiophile.robertpaton.com/" target="blank">Website</a>
+        </li>
+      </ul>
+      </div>
+
       <div class="col-md-3">
         <a href="http://stevesdesign.robertpaton.com/" target="blank">
-          <img src="img/steves.png" alt="Steve's Designs" class="img-responsive web_hover">
+          <img src="img/steves.svg" alt="Steve's Designs" class="img-responsive web_hover row2">
         </a>
       </div>
       <div class="col-md-3">
         <a href="http://bttf.robertpaton.com/" target="blank">
-          <img src="img/bttf.png" alt="Back to the Future" class="img-responsive web_hover">
+          <img src="img/bttf.svg" alt="Back to the Future" class="img-responsive web_hover row2">
         </a>
       </div>
       <div class="col-md-3">
         <a href="http://sass.robertpaton.com/" target="blank">
-          <img src="img/sass.png" alt="SASS Expirement" class="img-responsive web_hover">
+          <img src="img/sass.svg" alt="SASS Expirement" class="img-responsive web_hover row2">
         </a>
       </div>
       <div class="col-md-3">
         <a href="http://blog.robertpaton.com/" target="blank">
-          <img src="img/blog.png" alt="Personal Blog" class="img-responsive web_hover">
+          <img src="img/blog.svg" alt="Personal Blog" class="img-responsive web_hover row2">
         </a>
       </div>
     </section>
@@ -120,5 +137,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
