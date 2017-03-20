@@ -123,16 +123,41 @@ body
 	opacity: 1;
 }
 
+.modal-content
+{
+	border: none;
+	border-radius: 0;
+	color: #2e365b;
+}
+
+.modal-header
+{
+	border-bottom: 1px solid #2e365b;
+}
+
+.gitImg
+{
+	padding-right: 20px;
+}
+
+.modalTitle
+{
+	display: inline;
+}
+
+.webDesc
+{
+	font-size: 1.3em;
+	line-height: 1.5em;
+	text-align: justify;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #2e365b;
+}
 
 #resume
 {
 	color: #2e365b;
 	text-align: center;	
-}
-
-.expandLink p
-{
-	display: inline;
 }
 
 
