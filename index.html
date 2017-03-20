@@ -37,16 +37,68 @@
         <p id="work">My Work</p>
       </div>
       <div class="col-md-3 icon">
-        <a data-toggle="collapse" href="#audioContent" aria-expanded="false" aria-controls="audioContent">
-          <img src="img/audiophile.svg" alt="Audiophile" id="audio" class="img-responsive web_hover">
+        <a data-toggle="modal" href="#audioContent" data-target="#audioContent">
+          <img src="img/audiophile.svg" alt="Audiophile" class="img-responsive web_hover">
         </a>
       </div>
 
-      <div class="col-md-3">
-        <a href="http://christinatischler.robertpaton.com/" target="blank">
-          <img src="img/christinatischler.svg" alt="Christina Tischler" class="img-responsive web_hover">
+      <div class="modal fade" id="audioContent">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modalTitle">Audiophile</h2>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+
+            <div class="modal-body">
+              <p class="webDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean id diam porta, fringilla arcu nec, venenatis enim. Donec ante turpis, efficitur id urna a, lobortis dictum felis. Morbi faucibus sapien rutrum eros fringilla auctor. Aliquam auctor gravida diam, eu feugiat ligula bibendum eget. Duis mattis auctor ex, sit amet dictum urna volutpat sed. Morbi placerat lorem ut massa ultricies, id finibus urna sollicitudin. Nulla nec nibh eu nulla posuere sollicitudin. Ut elit neque, euismod nec sapien ut, accumsan eleifend augue. Nam eget ex condimentum, porttitor ligula in, sollicitudin metus. Quisque eu rhoncus ex. Nullam quis tortor a mauris fringilla ornare. Vivamus ligula massa, tincidunt non tincidunt quis, convallis ac eros. Integer sagittis justo id nulla hendrerit posuere. Nam eget blandit enim. Donec quis lacus sit amet nunc gravida finibus at vel mauris. Etiam condimentum est eros, ac ultrices arcu egestas id.</p>
+              <ul class="nav">
+                <li><a href="https://github.com/RobertPaton/audiophile" target="blank">
+                    <img src="img/github.png" alt="Github Link" class="gitImg"><p class="modalTitle">Repo</p></a>
+                </li>
+
+                <li>
+                  <a href="http://audiophile.robertpaton.com/" target="blank">Website</a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-md-3 icon">
+        <a data-toggle="modal" href="#christinaContent" data-target="#christinaContent">
+          <img src="img/christinatischler.svg" alt="Christina Tischler" id="audio" class="img-responsive web_hover">
         </a>
       </div>
+
+      <div class="modal fade" id="christinaContent">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modalTitle">Christina Tischler</h2>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+
+            <div class="modal-body">
+              <p class="webDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean id diam porta, fringilla arcu nec, venenatis enim. Donec ante turpis, efficitur id urna a, lobortis dictum felis. Morbi faucibus sapien rutrum eros fringilla auctor. Aliquam auctor gravida diam, eu feugiat ligula bibendum eget. Duis mattis auctor ex, sit amet dictum urna volutpat sed. Morbi placerat lorem ut massa ultricies, id finibus urna sollicitudin. Nulla nec nibh eu nulla posuere sollicitudin. Ut elit neque, euismod nec sapien ut, accumsan eleifend augue. Nam eget ex condimentum, porttitor ligula in, sollicitudin metus. Quisque eu rhoncus ex. Nullam quis tortor a mauris fringilla ornare. Vivamus ligula massa, tincidunt non tincidunt quis, convallis ac eros. Integer sagittis justo id nulla hendrerit posuere. Nam eget blandit enim. Donec quis lacus sit amet nunc gravida finibus at vel mauris. Etiam condimentum est eros, ac ultrices arcu egestas id.</p>
+              <ul class="nav">
+                <li><a href="https://github.com/RobertPaton/christinatischler" target="blank">
+                    <img src="img/github.png" alt="Github Link" class="gitImg"><p class="modalTitle">Repo</p></a>
+                </li>
+
+                <li>
+                  <a href="http://christinatischler.robertpaton.com/" target="blank">Website</a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
       <div class="col-md-3">
         <a href="http://projectx.robertpaton.com/" target="blank">
           <img src="img/projectx.svg" alt="Project X" class="img-responsive web_hover">
@@ -56,21 +108,6 @@
         <a href="http://mcore.robertpaton.com/" target="blank">
           <img src="img/mcore.svg" alt="Mcore" class="img-responsive web_hover">
         </a>
-      </div>
-
-      <div class=" col-md-10 col-md-offset-1 collapse" id="audioContent">
-      <ul class="nav navbar-nav">
-        <li>
-          <a href="https://github.com/RobertPaton/audiophile" target="blank" class="expandLink">
-            <img src="img/github.png" alt="Github Link">
-            <p>Repo</p>
-          </a>          
-        </li>
-
-        <li>
-          <a href="http://audiophile.robertpaton.com/" target="blank">Website</a>
-        </li>
-      </ul>
       </div>
 
       <div class="col-md-3">
