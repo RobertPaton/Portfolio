@@ -42,11 +42,6 @@ body
 	text-align: center;
 }
 
-#web
-{
-	border-bottom: 2px solid #2e365b;
-}
-
 .web_hover
 {
 	opacity: 0.5;
