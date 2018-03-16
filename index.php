@@ -1,3 +1,37 @@
+<?php
+  ini_set('display_errors', 1);
+  error_reporting(E_ALL);
+
+  if(isset($_POST['submit'])) {
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $body = $_POST['message'];
+
+    if($name != "" && $email != "" && $body != "") {
+      $result = sendMail($name, $email, $body);
+      $message = $result;
+    }else{
+      $fail = mailFail();
+    }
+  }
+
+  function sendMail() {
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $message = $_POST['message'];
+    $to = 'robert.a.paton@gmail.com';
+    $subject = 'Hello';
+    $header = "From .". $name . " <" . $email . ">\r\n";
+
+    mail ($to, $subject, $message, $header);
+    echo "<h1 id='sent'>Your Message has been Sent.</h1>";
+  }
+
+  function mailFail(){
+    echo "<h1 id='sent'>Your Message has not been Sent.<br>Please Fill In The Fields.</h1>";
+  }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -432,5 +466,4 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
   </body>
-</html>
 </html>
